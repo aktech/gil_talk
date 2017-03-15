@@ -11,7 +11,7 @@ static PyObject* exmod_say_hello(PyObject* self, PyObject *args) {
 	}
 
 	else {
-		printf("This is message from C %s\n", msg);
+		printf("%s\n", msg);
 		sts = 21;
 	}
 	return Py_BuildValue("i", sts);
