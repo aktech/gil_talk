@@ -1,0 +1,19 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+
+			"file_exclude_patterns": [
+			"*.key",
+			"*.pdf",
+			"*.out",
+	 		],
+
+			"folder_exclude_patterns": [
+			"build",
+			".ipynb_checkpoints"
+	 		],
+		}
+	]
+}

@@ -2,25 +2,27 @@
 
 // static PyObject *exmodError;
 
-static PyObject* exmod_say_hello(PyObject* self, PyObject *args) {
-	const char* msg;
-	int sts = 0;
+static PyObject* exmod_count(PyObject* self, PyObject *args) {
+	long long int work;
 
-	if (!PyArg_ParseTuple(args, "s", &msg)) {
+	if (!PyArg_ParseTuple(args, "L", &work)) {
 		return NULL;
 	}
 
-	else {
-		printf("%s\n", msg);
-		sts = 21;
+	Py_BEGIN_ALLOW_THREADS
+	printf("%lld\n", work);
+	long long int i = 0;
+	while (work--) {
+		i++;
 	}
-	return Py_BuildValue("i", sts);
+	printf("%lld\n", i);
+    Py_END_ALLOW_THREADS
+	return Py_BuildValue("i", 1);
 }
 
 static PyMethodDef exmod_methods[] = {
 	// PythonName C-Func Name      Argument presentation  Description  
-	{"say_hello", exmod_say_hello, METH_VARARGS,          "Say Hello"},
-	{NULL, NULL, 0, NULL} 
+	{"count", exmod_count, METH_VARARGS,          "Count"}
 };
 
 static struct PyModuleDef exmodmodule = {

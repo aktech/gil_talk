@@ -1,0 +1,58 @@
+* Change Tick Interval
+import sys
+sys.setcheckinterval
+
+* import dis
+dis.dis 
+Disassemble classes, methods, functions, generators, or code.
+
+* Its a feature, not a bug?
+
+* STM (Software Transactional Memory) Approach
+
+* Many men & women have tried but they have learnt that GIL improves performance rather than hurt it.
+
+* Not more than one thread can run at a time, that means threading is really great for I/O Bound applications.
+
+* The strength of threads is shared state. The weakness of threads is shared state (managing race conditions).
+
+* The strength of processes is their independence from one another. The weakness of processes is lack of communication (hence need for IPC & object pickling & other overhead).
+
+* Locks don't lock anything. They are just flags and can be ignored. It's a cooperative tool, not and enforced tool.
+
+* Locks makes things slower.
+
+* Thread after you fork not before. Otherwise the locks used by the thread executor will get
+ duplicated across processes. If one of those processes dies while it has the lock all of the 
+ other processes using that lock will deadlock.
+
+* A colleage says "I have a problem & I want to use concurrency to solve it", What do you say? Now you have two problems!
+
+# Alternative Approaches
+
+* use of process-based concurrency rather than thread-based concurrency ( main downside of this approach is that the overhead of message serialisation and interprocess communication can significantly increase the response latency and reduce the overall throughput of an application)
+
+* The major alternative approach promoted by the community is best represented by Cython. Cython is a Python superset designed to be compiled down to CPython C extension modules. 
+
+One of the features Cython offers (as is possible from any binary extension module) is the ability to explicitly release the GIL around a section of code. By releasing the GIL in this fashion, Cython code can fully exploit all cores on a machine for computationally intensive sections of the code, while retaining all the benefits of Python for other parts of the application.
+
+Numba is another tool in a similar vein - it uses LLVM to convert Python code to machine code that can run with the GIL released (as well as exploiting vector operations provided by the CPU when appopriate).
+
+* with great shared memory comes great responsibility
+
+## Greg's Patch:
+
+* patch made the performance of single-threaded applications much worse--so much so that the patch couldn't be adopted.
+
+- BenchMarks:
+Python-1.4:
+
+ Single Thread:
+  * with GIL: 1.9 s
+  * w/o GIL : 12.7 s (6.7 times slower)
+
+Multiple Thread:
+  * with GIL: 2.5 s (1.3 times slower)
+  * w/o GIL : 18.5 s (1.45 times slower)
+
+# Capturing Thread State:

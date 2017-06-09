@@ -1,0 +1,855 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"get",
+				"get_json_data_from_link"
+			],
+			[
+				"res",
+				"response_json_data"
+			],
+			[
+				"if",
+				"ifmain\tif __name__ == '__main__'"
+			],
+			[
+				"ha",
+				"haar_blur_test"
+			],
+			[
+				"image",
+				"image_path"
+			],
+			[
+				"l1",
+				"l1_error"
+			],
+			[
+				"ima",
+				"image_file"
+			],
+			[
+				"a",
+				"array"
+			],
+			[
+				"br",
+				"BRIGHTNESS_COEFFICIENT"
+			],
+			[
+				"nu",
+				"number_of_channels"
+			],
+			[
+				"to",
+				"total_sum"
+			],
+			[
+				"retur",
+				"return"
+			],
+			[
+				"threa",
+				"thread1"
+			],
+			[
+				"ran",
+				"range"
+			],
+			[
+				"rand",
+				"rand_num"
+			],
+			[
+				"con",
+				"convert_energy"
+			],
+			[
+				"po",
+				"potential_energy"
+			],
+			[
+				"print",
+				"printf\tprintf …"
+			],
+			[
+				"time",
+				"time_span"
+			],
+			[
+				"run",
+				"run_count_single_thread"
+			],
+			[
+				"ex",
+				"exmod"
+			],
+			[
+				"row",
+				"row_html"
+			],
+			[
+				"app",
+				"append"
+			],
+			[
+				"tab",
+				"table"
+			],
+			[
+				"inse",
+				"insertTableRow"
+			],
+			[
+				"lo",
+				"log"
+			],
+			[
+				"up",
+				"updateSchedule"
+			],
+			[
+				"getSc",
+				"getScheduleAndTracks"
+			],
+			[
+				"tra",
+				"tracks"
+			],
+			[
+				"r",
+				"response"
+			],
+			[
+				"re",
+				"response"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"thre",
+				"thread1"
+			],
+			[
+				"TH",
+				"thread1"
+			],
+			[
+				"coun",
+				"countdown"
+			],
+			[
+				"th",
+				"threading"
+			],
+			[
+				"tre",
+				"treeData"
+			],
+			[
+				"tr",
+				"tree_root"
+			],
+			[
+				"chi",
+				"children_data"
+			],
+			[
+				"child",
+				"children_childs"
+			],
+			[
+				"ch",
+				"children_childs"
+			],
+			[
+				"childr",
+				"children"
+			],
+			[
+				"children_",
+				"children_name"
+			],
+			[
+				"cre",
+				"createTreeDataJson"
+			],
+			[
+				"roo",
+				"root_childrens"
+			],
+			[
+				"dis",
+				"dish_hierarchy"
+			],
+			[
+				"India",
+				"Indian"
+			],
+			[
+				"hie",
+				"dish_hierarchy"
+			],
+			[
+				"pa",
+				"parent"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"ter",
+				"treeDataDict"
+			],
+			[
+				"p",
+				"parent"
+			],
+			[
+				"tree",
+				"treeDataDict"
+			],
+			[
+				"RE",
+				"REPLACE"
+			],
+			[
+				"all_d",
+				"all_dishes_id"
+			],
+			[
+				"dish_i",
+				"dish_ids_of_cluster"
+			],
+			[
+				"array",
+				"array_merge"
+			],
+			[
+				"arr",
+				"array_keys"
+			],
+			[
+				"disp",
+				"display_name"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"clusters",
+				"clusters"
+			],
+			[
+				"clu",
+				"cluster"
+			],
+			[
+				"cl",
+				"cluster"
+			],
+			[
+				"dish",
+				"dish_id"
+			],
+			[
+				"enti",
+				"entity_type"
+			],
+			[
+				"each",
+				"each_dish"
+			],
+			[
+				"all",
+				"all_dishes"
+			],
+			[
+				"Cl",
+				"ClusterHierarchy"
+			],
+			[
+				"getC",
+				"getClusterFamily"
+			],
+			[
+				"clus",
+				"cluster_name"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"H",
+				"HighlightsCluster"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "c_boost_thread.cpp",
+			"settings":
+			{
+				"buffer_size": 1232,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "c_ext_gil_test.py",
+			"settings":
+			{
+				"buffer_size": 355,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "extension_module.c",
+			"settings":
+			{
+				"buffer_size": 794,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "function_threads.py",
+			"settings":
+			{
+				"buffer_size": 401,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "gil.sublime-project",
+			"settings":
+			{
+				"buffer_size": 124,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"last_filter": "pack",
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"About"
+			]
+		],
+		"width": 561.0
+	},
+	"console":
+	{
+		"height": 160.0,
+		"history":
+		[
+			"hello",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/aktech/Desktop/GIL"
+	],
+	"file_history":
+	[
+		"/Users/aktech/Desktop/GIL/class_threads.py",
+		"/Users/aktech/Desktop/GIL/pure_python_threads.py",
+		"/Users/aktech/Desktop/Desktop Items/GIL/c_ext_gil_test.py",
+		"/Users/aktech/Desktop/prefix.py",
+		"/Users/aktech/Desktop/photos_metadata.sql",
+		"/Users/aktech/Downloads/ml_human_moderation.sql",
+		"/Users/aktech/venv/lib/python3.5/site-packages/celery/utils/serialization.py",
+		"/Users/aktech/Desktop/mohan/disp.py",
+		"/Users/aktech/Desktop/haar_blur.py",
+		"/Users/aktech/Downloads/countingsheep.cpp",
+		"/Users/aktech/Downloads/A.py",
+		"/Users/aktech/aktech.github.io/_posts/2017-03-26-PyDelhi-Conference-2017 &#58; Anecdote.md",
+		"/Users/aktech/Desktop/get_image_brightness.py",
+		"/Users/aktech/work/Deep/require.txt",
+		"/Users/aktech/diff.py",
+		"/Users/aktech/untitled",
+		"/Users/aktech/Desktop/fisher.py",
+		"/Users/aktech/Desktop/neural_net.py",
+		"/Users/aktech/aktech.github.io/_posts/2017-03-26-PyDelhi Conference 2017 Anecdote.md",
+		"/Users/aktech/aktech.github.io/_posts/2017-03-26-Another-PyDelhi-Conference-2017.md",
+		"/Users/aktech/aktech.github.io/_posts/2017-03-26-Another-PyDelhi-Conference-2017 copy.md",
+		"/Users/aktech/aktech.github.io/_posts/2015-2-9-Higher order functions in Python &#58; sorted, map, reduce, filter.md",
+		"/Users/aktech/aktech.github.io/cv/index.html",
+		"/Users/aktech/aktech.github.io/index.html",
+		"/Users/aktech/aktech.github.io/_posts/2017-03-19-The-First-PyCon Pune-2017.md",
+		"/Users/aktech/aktech.github.io/tags/index.html",
+		"/Users/aktech/aktech.github.io/_posts/2014-12-12-Spoj FCTRL2 Explanation and Solution.md",
+		"/Users/aktech/aktech.github.io/_posts/2016-9-20-PyCon-Asia-Pacific-2016 &#58; Respect Diversity.md",
+		"/Users/aktech/aktech.github.io/_posts/2015-1-19-Migrated to Jekyll and Github Pages.md",
+		"/Users/aktech/aktech.github.io/_posts/2015-4-28-Google-Summer-Of-Code-with-SymPy.md",
+		"/Users/aktech/aktech.github.io/_posts/2015-5-24-GSoC &#58; Getting-Up-For-the-Coding-Period .md",
+		"/Users/aktech/aktech.github.io/_posts/2015-6-1-GSoC &#58; This week in SymPy &#35;1.md",
+		"/Users/aktech/aktech.github.io/_posts/2015-6-17-GSoC &#58; This week in SymPy &#35;3.md",
+		"/Users/aktech/aktech.github.io/_posts/2015-6-23-GSoC &#58; This week in SymPy &#35;4 &#38; 5.md",
+		"/Users/aktech/aktech.github.io/_posts/2015-6-7-GSoC &#58; This week in SymPy &#35;2 .md",
+		"/Users/aktech/aktech.github.io/_posts/2015-7-15-GSoC &#58; This week in SymPy &#35;7.md",
+		"/Users/aktech/aktech.github.io/_posts/2015-7-21-GSoC &#58; This week in SymPy &#35;8.md",
+		"/Users/aktech/aktech.github.io/_posts/2015-7-28-GSoC &#58; This week in SymPy &#35;9.md",
+		"/Users/aktech/aktech.github.io/_posts/2015-7-6-GSoC &#58; This week in SymPy &#35;6.md",
+		"/Users/aktech/aktech.github.io/_posts/2015-8-11-GSoC &#58; This week in SymPy &#35;10 &#38;11.md",
+		"/Users/aktech/aktech.github.io/_posts/2015-8-28-GSoC &#58; Throughout in SymPy &#35; Wrap Up.md",
+		"/Users/aktech/aktech.github.io/_posts/2016-10-30-Summer 2016 &#64; HackerEarth.md",
+		"/Users/aktech/aktech.github.io/_posts/2016-11-06-PyCon UK &#58; Python in Wales.md",
+		"/Users/aktech/aktech.github.io/_posts/2016-2-7-SymPy Workshop at PyDelhi Meetup.md",
+		"/Users/aktech/aktech.github.io/_posts/2016-3-26-SymPy Workshop at FOSSASIA 2016, Singapore.md",
+		"/Users/aktech/aktech.github.io/_posts/2016-4-2-Talk on Python MRO at PyDelhi Meetup.md",
+		"/Users/aktech/aktech.github.io/_posts/2016-5-29-Talk on Introducing Metaclasses at PyDelhi Meetup.md",
+		"/Users/aktech/aktech.github.io/_posts/2016-8-28-SciPy-2016 &#58; Journey to the West.md",
+		"/Users/aktech/aktech.github.io/blog-gen/index.html",
+		"/Users/aktech/aktech.github.io/blog-gen/2017-4-3-PyCon-Pune-2017.md",
+		"/Users/aktech/Desktop/GIL/Outline.md",
+		"/Users/aktech/Desktop/GIL Talk Notes",
+		"/Users/aktech/Desktop/GIL/thread_sync_problem.py",
+		"/Users/aktech/Desktop/GIL/exmodmodule.c",
+		"/Users/aktech/Desktop/GIL/test_parpyx.py",
+		"/Users/aktech/Desktop/GIL/parpyx.pyx",
+		"/Users/aktech/Desktop/GIL/parpyx.c",
+		"/Users/aktech/Desktop/hello.go",
+		"/Users/aktech/dev/cpython/meta.py",
+		"/Users/aktech/dev/cpython/from abc import ABCMeta",
+		"/Users/aktech/dev/cpython/Doc/build/html/library/csv.html",
+		"/Users/aktech/venv/Confluence/src/mails/migrations/__init__.py",
+		"/Users/aktech/Desktop/abc.html",
+		"/Users/aktech/Desktop/test_parpyx.py",
+		"/Users/aktech/Desktop/parpyx.pyx",
+		"/Users/aktech/progress_pie/pp.py",
+		"/Users/aktech/PyZomato/zomato/zomato.py",
+		"/Users/aktech/Desktop/C-ext/greetmodule.c",
+		"/Users/aktech/Desktop/GIL Talk code/function_threads.py",
+		"/Users/aktech/Desktop/GIL Talk code/class_threads.py",
+		"/Users/aktech/Desktop/GIL Talk code/gil.py",
+		"/Users/aktech/Desktop/gil1.py",
+		"/Users/aktech/Desktop/gil.py",
+		"/Users/aktech/Desktop/Data Requests/Review_count_by_source.csv",
+		"/Users/aktech/Desktop/queries.sql",
+		"/Users/aktech/queries.sql",
+		"/Users/aktech/Downloads/DataTables-1.10.13/media/js/jquery.dataTables.js",
+		"/Users/aktech/Downloads/DataTables-1.10.13/ISSUE_TEMPLATE.md",
+		"/Users/aktech/Downloads/review_highlight_words.sql",
+		"/Users/aktech/Desktop/zomato4_2016-12-26.sql",
+		"/Users/aktech/Downloads/review_highlight_word_scores.sql",
+		"/Users/aktech/Downloads/category mapping- partial.xlsx - Pivot Table 3.csv",
+		"/Users/aktech/Desktop/d3.html",
+		"/Users/aktech/Downloads/PyAL/sqlite.py",
+		"/Users/aktech/Downloads/PyAL/pyal.py",
+		"/Users/aktech/Downloads/XX-Net-3.2.7/README.md",
+		"/Users/aktech/scrap.py",
+		"/Users/aktech/Downloads/urid.txt",
+		"/Users/aktech/Downloads/URI/10-SPAM-user_rating_inline.sql",
+		"/Users/aktech/Downloads/user_rating_inline.sql",
+		"/Users/aktech/Downloads/user_reviews_limit_group.sql",
+		"/Users/aktech/Downloads/reviews.sql",
+		"/Users/aktech/Downloads/reviews (2).sql",
+		"/Users/aktech/Downloads/users_temp.sql",
+		"/Users/aktech/Downloads/uid.sql",
+		"/Users/aktech/Downloads/reviews.csv",
+		"/Users/aktech/Downloads/reviews (1).sql",
+		"/Users/aktech/Downloads/review_highlight_cluster_hierarchy.sql",
+		"/Users/aktech/Downloads/review_highlight_clusters.sql",
+		"/Users/aktech/Downloads/review_highlight_cluster_hierarchy (2).sql",
+		"/Users/aktech/Downloads/review_highlight_cluster_restaurant_mapping.sql",
+		"/Users/aktech/Downloads/DataTables/datatables.css",
+		"/Users/aktech/Downloads/DataTables/datatables.min.js",
+		"/Users/aktech/Downloads/DataTables/datatables.min.css",
+		"/Users/aktech/work/ZomatoWeb/application/build/js/jquery.markitup.min.js",
+		"/Users/aktech/work/ZomatoWeb/application/.codeclimate.yml",
+		"/Users/aktech/work/ZomatoWeb/application/modules/Reviews/HighlightsCluster.php",
+		"/Users/aktech/work/ZomatoWeb/application/includes/settings.php",
+		"/Users/aktech/work/ZomatoWeb/application/admin/dashboard/collections/city_collection_order.php",
+		"/Users/aktech/work/ZomatoWeb/application/javascript/collections.js"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"construct_edge_map",
+			"haar_transform",
+			"xrange",
+			"print",
+			"detect_blur",
+			"Nda",
+			"blur_detect",
+			"map",
+			"sift",
+			"far",
+			"farha",
+			"pyg",
+			"gem",
+			"fisher_vector",
+			"train",
+			"ob",
+			"time",
+			"work",
+			"append",
+			"join",
+			"getScheduleRowsForADay",
+			"all_rows",
+			"updateScheduleForDay",
+			"table",
+			"ajax",
+			"day_1_schedule",
+			"Multi",
+			"active",
+			"8453",
+			"factory",
+			"define(",
+			"define",
+			"datatables.net",
+			"i ",
+			"i",
+			"update",
+			"treeData",
+			"children",
+			"buttons",
+			"button",
+			"searchClusterInHighlights",
+			"searchDishInHighlights",
+			"fetch",
+			"DB_",
+			"DB::"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "c_boost_thread.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1232,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "c_ext_gil_test.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 355,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								246,
+								246
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "extension_module.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 794,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "function_threads.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 401,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								380,
+								380
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "gil.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 124,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								114,
+								114
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "gil.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"high",
+				"modules/Reviews/HighlightsCluster.php"
+			],
+			[
+				"",
+				".codeclimate.yml"
+			],
+			[
+				"settings",
+				"includes/settings.php"
+			],
+			[
+				"highli",
+				"modules/Reviews/HighlightsCluster.php"
+			],
+			[
+				"highlightc",
+				"modules/Reviews/HighlightsCluster.php"
+			],
+			[
+				"cluster/sea",
+				"admin/dashboard/api/collections/clusters/search.php"
+			],
+			[
+				"collections.js",
+				"javascript/admin_dashboard/components/collections.js"
+			],
+			[
+				"collectio",
+				"javascript/collections.js"
+			],
+			[
+				"sea",
+				"search.php"
+			],
+			[
+				"highlig",
+				"application/modules/Reviews/HighlightsCluster.php"
+			],
+			[
+				"dal",
+				"modules/DAL.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 196.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
