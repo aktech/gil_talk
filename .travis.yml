@@ -1,0 +1,15 @@
+language: python
+
+addons:
+  apt:
+    packages:
+      - python-dev
+
+before_script:
+  - sudo apt-get update
+  - sudo apt-get install python-dev   # for python2.x installs
+  - sudo apt-get install libpython-dev
+
+script:
+  - make
+  - python c_ext_gil_test.py
