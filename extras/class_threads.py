@@ -6,7 +6,7 @@ TOTAL_WORK = 10000000
 
 class CountdownThread(threading.Thread):
 
-    def __init__(self,count):
+    def __init__(self, count):
         threading.Thread.__init__(self)
         self.count = count
 

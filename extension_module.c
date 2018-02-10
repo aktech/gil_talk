@@ -27,7 +27,8 @@ static PyMethodDef myModule[] =
 };
 
 /* module initialization */
-PyMODINIT_FUNC initextension_module(void)
+PyMODINIT_FUNC
+initextension_module(void)
 {
      (void) Py_InitModule("extension_module", myModule);
 }
