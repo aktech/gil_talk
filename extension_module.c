@@ -12,13 +12,13 @@ static PyObject* count(PyObject* self, PyObject* args)
      */
 
     Py_BEGIN_ALLOW_THREADS
-    while (value > 0.0) {
+    while (value > 0) {
         // Simply Count
         value -= 1;
     }
     Py_END_ALLOW_THREADS
 
-    return Py_BuildValue("L", 1);
+    return Py_BuildValue("i", 1);
 }
 
 /*  define functions in module */
