@@ -10,13 +10,13 @@ A talk on Global Interpreter lock.
 ### Functions threads API
 
 ```bash
-$ python function_threads.py
+$ python python_multithreading/function_threads.py
 ```
 
 ### Class based threads API
 
 ```bash
-$ python class_threads.py
+$ python python_multithreading/class_threads.py
 ```
 
 ### Extension Module
@@ -24,7 +24,7 @@ $ python class_threads.py
 Python C extension module is written in `extension_module.c` to build it on mac, run:
 
 ```bash
-$ python setup.py build
+$ python python_c_extension/setup.py build
 ```
 
 The above will will compile `extension_module.c`, and produce an extension module
@@ -34,14 +34,14 @@ a subdirectory `build/lib.system.extension_module.so`.
 Copy the built `*.so` file in the current directory, for e.g.:
 
 ```bash
-$ cp build/lib.macosx-10.7-x86_64-3.6/extension_module.cpython-36m-darwin.so .
+$ cp -r build/*/* python_c_extension
 ```
 
 The function defined in extensions module is used in `c_ext_gil_test.py`, run it
 as following:
 
 ```bash
-$ python c_ext_gil_test.py
+$ python python_c_extension/c_extension_gil.py
 Single Thread: 2.118302
 Two Threads:   1.348021
 ```
@@ -51,7 +51,7 @@ Two Threads:   1.348021
 * compile
 
 ```bash
-$ g++ c_threads.cpp -o c_threads
+$ g++ cpp_multithreading/c_threads.cpp -o cpp_multithreading/c_threads
 ```
 
 * run
