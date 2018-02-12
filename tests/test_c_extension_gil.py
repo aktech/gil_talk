@@ -1,8 +1,8 @@
 import unittest
 
-from extension_module import count
-from c_extension_gil import run_count_in_single_thread
-from c_extension_gil import run_count_in_multiple_threads
+from python_c_extension.extension_module import count
+from python_c_extension.c_extension_gil import run_count_in_single_thread
+from python_c_extension.c_extension_gil import run_count_in_multiple_threads
 
 
 class TestCExtensionCount(unittest.TestCase):

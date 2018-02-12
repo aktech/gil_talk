@@ -5,6 +5,6 @@ python:
   - "3.6"
 
 script:
-  - python setup.py build
-  - cp -r build/*/* .
+  - python python_c_extension/setup.py build
+  - cp -r build/*/* python_c_extension
   - python -m unittest discover tests/

@@ -3,7 +3,7 @@ from time import time
 from threading import Thread
 
 try:
-    from extension_module import count
+    from python_c_extension.extension_module import count
 except ModuleNotFoundError as e:
     print('Error: extension_module not found. Build extension module by: \n'
           '$ python setup.py build \n'
