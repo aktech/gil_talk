@@ -9,6 +9,7 @@ using namespace std;
 void *task(void *n_) {
     long long int n = *((long long int*)n_);
     for (long long int i = 0; i <= n; i++) {}
+    return 0;
 }
 
 
@@ -17,7 +18,7 @@ int main (int argc, char ** argv) {
     long long int *arg = (long long int *)malloc(sizeof(*arg));
     std::chrono::steady_clock::time_point begin = std::chrono::steady_clock::now();
     *arg = N;
-    *task(arg);
+    task(arg);
     std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
     cout << "Elapsed time with 1 thread:  " << std::chrono::duration_cast<std::chrono::milliseconds>(end - begin).count() / 1000.0 <<std::endl;
 

@@ -4,6 +4,10 @@ python:
   - "3.5"
   - "3.6"
 
+compiler:
+  - clang
+  - gcc
+
 before_script:
   - python python_c_extension/setup.py build
   - cp -r build/*/* python_c_extension
