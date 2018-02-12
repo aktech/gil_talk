@@ -57,7 +57,7 @@ $ g++ cpp_multithreading/c_threads.cpp -o cpp_multithreading/c_threads
 * run
 
 ```bash
-$ ./c_threads
+$ ./cpp_multithreading/c_threads
 ```
 
 ### Acknowledgement
