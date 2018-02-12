@@ -4,15 +4,9 @@ python:
   - "3.5"
   - "3.6"
 
-compiler:
-  - clang
-  - gcc
-
 before_script:
   - python python_c_extension/setup.py build
   - cp -r build/*/* python_c_extension
-  - g++ cpp_multithreading/c_threads.cpp -o cpp_multithreading/c_threads
 
 script:
   - python -m unittest discover tests/
-  - ./cpp_multithreading/c_threads
