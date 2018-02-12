@@ -2,8 +2,9 @@ language: python
 
 python:
   - "3.5"
+  - "3.6"
 
 script:
   - python setup.py build
   - cp -r build/*/* .
-  - python c_ext_gil_test.py
+  - python -m unittest discover tests/
