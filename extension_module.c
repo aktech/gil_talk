@@ -1,6 +1,5 @@
 #include <Python.h>
-#include <stdio.h>
-#include <math.h>
+
 
 static PyObject* count(PyObject* self, PyObject* args)
 {
