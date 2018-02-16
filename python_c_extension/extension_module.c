@@ -27,6 +27,7 @@ static PyMethodDef myModule[] =
      {"count", count, METH_VARARGS, "Count Loop"}
 };
 
+/* Defines module */
 static struct PyModuleDef extension_module = {
     PyModuleDef_HEAD_INIT,
     "extension_module",
@@ -35,6 +36,7 @@ static struct PyModuleDef extension_module = {
     myModule
 };
 
+/* Inititialise */
 PyMODINIT_FUNC
 PyInit_extension_module(void)
 {
