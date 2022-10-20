@@ -1,0 +1,24 @@
+name: GIL Talk Demo
+
+on: push
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.6"
+
+    - name: Install dependencies and run script
+      run: |
+        python python_c_extension/setup.py build
+        cp -r build/*/* python_c_extension
+        python -m unittest discover tests/
