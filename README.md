@@ -1,7 +1,6 @@
 # GIL Talk
 
-[![Build
-Status](https://travis-ci.org/aktech/gil_talk.svg?branch=master)](https://travis-ci.org/aktech/gil_talk)
+[![GIL Talk Demo](https://github.com/aktech/gil_talk/actions/workflows/test.yml/badge.svg)](https://github.com/aktech/gil_talk/actions/workflows/test.yml)
 
 A talk on Global Interpreter lock.
 
