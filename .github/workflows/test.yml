@@ -19,6 +19,9 @@ jobs:
         python-version: "${{ matrix.version }}"
         allow-prereleases: true
 
+    - name: Install dependencies
+      run: |
+        pip install setuptools
     - name: Build and run tests
       run: |
         python python_c_extension/setup.py build
