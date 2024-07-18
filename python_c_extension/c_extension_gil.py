@@ -36,8 +36,8 @@ def run_count_in_multiple_threads(count_func=count):
 
 
 if __name__ == '__main__':
-    print('Single Thread (C extension): %8f' % (run_count_in_single_thread(count)))
-    print('Two Threads (C extension):   %8f' % (run_count_in_multiple_threads(count)))
+    print('Single Thread (C extension): %8f s' % (run_count_in_single_thread(count)))
+    print('Two Threads (C extension):   %8f s' % (run_count_in_multiple_threads(count)))
 
     print('Single Thread (Pure Python): %8f' % (run_count_in_single_thread(count_pure_python)))
     print('Two Threads (Pure Python):   %8f' % (run_count_in_multiple_threads(count_pure_python)))
