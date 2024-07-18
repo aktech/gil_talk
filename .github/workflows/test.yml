@@ -9,21 +9,53 @@ jobs:
   build:
     strategy:
       matrix:
-        version: ["3.9", "3.10", "3.11", "3.12"]
+        version: ["3.9", "3.10", "3.11", "3.12", "3.13"]
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -el {0}
     steps:
     - uses: actions/checkout@v3
+
     - name: Set up Python
+      if: matrix.version != 3.13
       uses: actions/setup-python@v4
       with:
         python-version: "${{ matrix.version }}"
         allow-prereleases: true
 
+    - name: Setup Python via Miniconda
+      if: matrix.version == 3.13
+      uses: conda-incubator/setup-miniconda@v3.0.4
+      with:
+        python-version: 3.13
+        channels: defaults,ad-testing/label/py313_nogil
+
+    - name: Check Python version
+      run: |
+        python -VV
+
+    - name: Check Python GIL enabled
+      if: matrix.version == 3.13
+      run: python -c "import sys; print(sys._is_gil_enabled())"
+
     - name: Install dependencies
       run: |
         pip install setuptools
-    - name: Build and run tests
+
+    - name: Build C extension
       run: |
         python python_c_extension/setup.py build
         cp -r build/*/* python_c_extension
-        python -m unittest discover tests/ -vvv
+
+    - name: Run script in single and multi-thread mode
+      run: |
+        python python_c_extension/c_extension_gil.py
+      env:
+        PYTHONPATH: "."
+        PYTHON_GIL: 0
+
+    - name: Run Tests
+      run: python -m unittest discover tests/ -vvv
+      env:
+        PYTHON_GIL: 0
