@@ -9,27 +9,31 @@ jobs:
   build:
     strategy:
       matrix:
-        version: ["3.9", "3.10", "3.11", "3.12", "3.13"]
-    runs-on: ubuntu-latest
+        # version: ["3.9", "3.10", "3.11", "3.12", "3.13"]
+        version: ["3.9"]
+    runs-on: "cirun-aws-t2-large-ubuntu2204--${{ github.run_id }}"
     defaults:
       run:
         shell: bash -el {0}
     steps:
     - uses: actions/checkout@v3
 
-    - name: Set up Python
-      if: matrix.version != 3.13
-      uses: actions/setup-python@v4
-      with:
-        python-version: "${{ matrix.version }}"
-        allow-prereleases: true
+    # - name: Set up Python
+    #   if: matrix.version != 3.13
+    #   uses: actions/setup-python@v4
+    #   with:
+    #     python-version: "${{ matrix.version }}"
+    #     allow-prereleases: true
 
     - name: Setup Python via Miniconda
-      if: matrix.version == 3.13
       uses: conda-incubator/setup-miniconda@v3.0.4
       with:
-        python-version: 3.13
-        channels: defaults,ad-testing/label/py313_nogil
+        python-version: "${{ matrix.version }}"
+        #channels: defaults,ad-testing/label/py313_nogil
+
+    - name: Install build essentials
+      run: |
+        conda install gcc -c conda-forge -y
 
     - name: Check Python version
       run: |
