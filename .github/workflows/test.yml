@@ -32,6 +32,7 @@ jobs:
       uses: conda-incubator/setup-miniconda@v3
       with:
         python-version: "${{ matrix.version }}"
+        channels: conda-forge
         #channels: defaults,ad-testing/label/py313_nogil
 
     - name: Try pip again
