@@ -10,7 +10,7 @@ jobs:
     strategy:
       matrix:
         # version: ["3.9", "3.10", "3.11", "3.12", "3.13"]
-        version: ["3.9"]
+        version: ["3.11"]
     runs-on: "cirun-aws-t2-large-ubuntu2204--${{ github.run_id }}"
     defaults:
       run:
