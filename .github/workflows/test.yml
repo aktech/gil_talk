@@ -17,7 +17,9 @@ jobs:
         shell: bash -el {0}
     steps:
     - uses: actions/checkout@v3
-
+    - name: Try pip
+      if: always()
+      run: pip install setuptools
     # - name: Set up Python
     #   if: matrix.version != 3.13
     #   uses: actions/setup-python@v4
@@ -26,10 +28,15 @@ jobs:
     #     allow-prereleases: true
 
     - name: Setup Python via Miniconda
+      if: always()
       uses: conda-incubator/setup-miniconda@v3.0.4
       with:
         python-version: "${{ matrix.version }}"
         #channels: defaults,ad-testing/label/py313_nogil
+
+    - name: Try pip again
+      if: always()
+      run: pip install setuptools
 
     - name: Install build essentials
       run: |
