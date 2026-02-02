@@ -60,9 +60,6 @@ jobs:
       env:
         PYTHON_GIL: 0
 
-    - name: Install dependencies
-      run: pixi run pip install setuptools
-
     - name: Build C extension
       run: |
         pixi run python python_c_extension/setup.py build
