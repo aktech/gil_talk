@@ -11,37 +11,20 @@ jobs:
       matrix:
         version: ["3.9", "3.10", "3.11", "3.12"]
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        shell: bash -el {0}
     steps:
     - uses: actions/checkout@v3
 
     - name: Set up Python
-      if: matrix.version != 3.13
       uses: actions/setup-python@v4
       with:
         python-version: "${{ matrix.version }}"
         allow-prereleases: true
 
-    - name: Setup Python via Miniconda
-      if: matrix.version == 3.13
-      uses: conda-incubator/setup-miniconda@v3.0.4
-      with:
-        python-version: 3.13
-        channels: defaults,ad-testing/label/py313_nogil
-
     - name: Check Python version
-      run: |
-        python -VV
-
-    - name: Check Python GIL enabled
-      if: matrix.version == 3.13
-      run: python -c "import sys; print(sys._is_gil_enabled())"
+      run: python -VV
 
     - name: Install dependencies
-      run: |
-        pip install setuptools
+      run: pip install setuptools
 
     - name: Build C extension
       run: |
@@ -49,13 +32,50 @@ jobs:
         cp -r build/*/* python_c_extension
 
     - name: Run script in single and multi-thread mode
-      run: |
-        python python_c_extension/c_extension_gil.py
+      run: python python_c_extension/c_extension_gil.py
       env:
         PYTHONPATH: "."
         PYTHON_GIL: 0
 
     - name: Run Tests
       run: python -m unittest discover tests/ -vvv
+      env:
+        PYTHON_GIL: 0
+
+  build-freethreaded:
+    strategy:
+      matrix:
+        version: ["py313", "py314"]
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Setup pixi
+      uses: prefix-dev/setup-pixi@v0.8.0
+      with:
+        manifest-path: pixi.toml
+        environments: ${{ matrix.version }}
+
+    - name: Check Python version
+      run: pixi run -e ${{ matrix.version }} python -VV
+
+    - name: Check GIL is disabled
+      run: pixi run -e ${{ matrix.version }} python -c "import sys; print('GIL enabled:', sys._is_gil_enabled())"
+      env:
+        PYTHON_GIL: 0
+
+    - name: Build C extension
+      run: |
+        pixi run -e ${{ matrix.version }} python python_c_extension/setup.py build
+        cp -r build/*/* python_c_extension
+
+    - name: Run script in single and multi-thread mode
+      run: pixi run -e ${{ matrix.version }} python python_c_extension/c_extension_gil.py
+      env:
+        PYTHONPATH: "."
+        PYTHON_GIL: 0
+
+    - name: Run Tests
+      run: pixi run -e ${{ matrix.version }} python -m unittest discover tests/ -vvv
       env:
         PYTHON_GIL: 0

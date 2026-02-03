@@ -1,0 +1,18 @@
+[workspace]
+name = "gil_talk"
+channels = ["conda-forge"]
+platforms = ["linux-64", "osx-arm64", "osx-64"]
+
+[dependencies]
+pip = "*"
+setuptools = "*"
+
+[feature.py313.dependencies]
+python-freethreading = "3.13.*"
+
+[feature.py314.dependencies]
+python-freethreading = "3.14.*"
+
+[environments]
+py313 = ["py313"]
+py314 = ["py314"]
