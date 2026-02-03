@@ -43,6 +43,9 @@ jobs:
         PYTHON_GIL: 0
 
   build-freethreaded:
+    strategy:
+      matrix:
+        version: ["py313", "py314"]
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -51,27 +54,28 @@ jobs:
       uses: prefix-dev/setup-pixi@v0.8.0
       with:
         manifest-path: pixi.toml
+        environments: ${{ matrix.version }}
 
     - name: Check Python version
-      run: pixi run python -VV
+      run: pixi run -e ${{ matrix.version }} python -VV
 
     - name: Check GIL is disabled
-      run: pixi run python -c "import sys; print('GIL enabled:', sys._is_gil_enabled())"
+      run: pixi run -e ${{ matrix.version }} python -c "import sys; print('GIL enabled:', sys._is_gil_enabled())"
       env:
         PYTHON_GIL: 0
 
     - name: Build C extension
       run: |
-        pixi run python python_c_extension/setup.py build
+        pixi run -e ${{ matrix.version }} python python_c_extension/setup.py build
         cp -r build/*/* python_c_extension
 
     - name: Run script in single and multi-thread mode
-      run: pixi run python python_c_extension/c_extension_gil.py
+      run: pixi run -e ${{ matrix.version }} python python_c_extension/c_extension_gil.py
       env:
         PYTHONPATH: "."
         PYTHON_GIL: 0
 
     - name: Run Tests
-      run: pixi run python -m unittest discover tests/ -vvv
+      run: pixi run -e ${{ matrix.version }} python -m unittest discover tests/ -vvv
       env:
         PYTHON_GIL: 0
