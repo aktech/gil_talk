@@ -35,12 +35,9 @@ jobs:
       run: python python_c_extension/c_extension_gil.py
       env:
         PYTHONPATH: "."
-        PYTHON_GIL: 0
 
     - name: Run Tests
       run: python -m unittest discover tests/ -vvv
-      env:
-        PYTHON_GIL: 0
 
   build-freethreaded:
     strategy:
