@@ -5,3 +5,8 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "gil_talk"
 version = "0.2"
+description = "Python C Extension module"
+requires-python = ">=3.11"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -20,27 +20,18 @@ $ python python_multithreading/class_threads.py
 
 ### Extension Module
 
-Python C extension module is written in `extension_module.c` to build it on mac, run:
+Python C extension module is written in `src/python_c_extension/extension_module.c`.
+To build and install it into the current environment, run from the repo root:
 
 ```bash
-$ python python_c_extension/setup.py build
+$ pip install .
 ```
 
-The above will will compile `extension_module.c`, and produce an extension module
-in the build directory. Depending on the system, the module file will end up in
-a subdirectory `build/lib.system.extension_module.so`.
-
-Copy the built `*.so` file in the current directory, for e.g.:
-
-```bash
-$ cp -r build/*/* python_c_extension
-```
-
-The function defined in extensions module is used in `c_ext_gil_test.py`, run it
+The function defined in extensions module is used in `c_extension_gil.py`, run it
 as following:
 
 ```bash
-$ python python_c_extension/c_extension_gil.py
+$ python -m python_c_extension.c_extension_gil
 Single Thread: 2.118302
 Two Threads:   1.348021
 ```

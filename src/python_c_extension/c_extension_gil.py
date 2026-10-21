@@ -5,9 +5,8 @@ from threading import Thread
 try:
     from python_c_extension.extension_module import count
 except ModuleNotFoundError as e:
-    print('Error: extension_module not found. Build extension module by: \n'
-          '$ python setup.py build \n'
-          'And move the built .so file to the current directory')
+    print('Error: extension_module not found. Build and install it from the repo root by: \n'
+          '$ pip install .')
     sys.exit(0)
 
 

@@ -106,4 +106,3 @@ venv.bak/
 
 # mypy
 .mypy_cache/
-python_c_extension/python_c_extension/

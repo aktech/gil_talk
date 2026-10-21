@@ -26,15 +26,11 @@ jobs:
     - name: Install dependencies
       run: pip install setuptools
 
-    - name: Build C extension
-      run: |
-        python python_c_extension/setup.py build
-        cp -r build/*/* python_c_extension
+    - name: Build and install C extension
+      run: pip install --no-build-isolation .
 
     - name: Run script in single and multi-thread mode
-      run: python python_c_extension/c_extension_gil.py
-      env:
-        PYTHONPATH: "."
+      run: python -m python_c_extension.c_extension_gil
 
     - name: Run Tests
       run: python -m unittest discover tests/ -vvv
@@ -62,15 +58,12 @@ jobs:
       env:
         PYTHON_GIL: 0
 
-    - name: Build C extension
-      run: |
-        pixi run -e ${{ matrix.version }} python python_c_extension/setup.py build
-        cp -r build/*/* python_c_extension
+    - name: Build and install C extension
+      run: pixi run -e ${{ matrix.version }} python -m pip install --no-build-isolation .
 
     - name: Run script in single and multi-thread mode
-      run: pixi run -e ${{ matrix.version }} python python_c_extension/c_extension_gil.py
+      run: pixi run -e ${{ matrix.version }} python -m python_c_extension.c_extension_gil
       env:
-        PYTHONPATH: "."
         PYTHON_GIL: 0
 
     - name: Run Tests
